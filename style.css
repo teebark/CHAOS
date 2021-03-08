@@ -1,0 +1,94 @@
+/*
+ Theme Name:   CHAOS GP Child
+ Theme URI:    https://generatepress.com
+ Description:  Default Generate Press child
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+/* Assign color variables */
+:root {
+	--dark-blue: #0069b5;
+}
+/* Get rid of space between navbar and hero image */
+.home #main {
+	margin-top: 0;
+}
+.home .inside-article,
+.home .wp-block-group__inner-container {
+	padding-top: 0;
+}
+/* Hero title alignment */
+.home h1.hero-title {
+	margin-left: 150px;
+	font-size: 3rem;
+	font-weight: 700;
+	color: white;
+	text-shadow: 2px 2px 0 black;
+	/* box-shadow: -5px -3px 5px var(--light-gray,gray); */
+	/* background-color: var(--light-gray,gray); */
+	display: inline-block;
+	margin-top: 200px;
+	margin-bottom: 0;
+}
+p.hero-title {
+	margin-left: 150px;
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: white;
+	text-shadow: 1px 1px 0 black;
+	display: table-cell;
+}
+/* Line up hero title, button */
+.home .wp-block-cover__inner-container {
+	display: flex;
+	flex-direction: column;
+	align-items:
+}
+.home .wp-block-cover__inner-container p {
+	margin-bottom: 0;
+}
+.faq ul {
+	list-style: none;
+}
+/* Get rid of site header for star party page */
+.category-starparty  #site-navigation {
+	display: none;
+}
+.location #site-navigation {
+	display: none;
+}
+/* Tablet CSS --------------------------------------------------------------------------------------------- */
+@media (min-width: 1025px) {
+/* Shift navbar to right on desktop */
+#site-navigation .navigation-branding {
+	margin-right: 100px;
+	}
+}
+/* Mobile CSS ---------------------------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+/* Decrease item spacing in mobile hamburger drop down */
+.main-navigation .main-nav ul li a {
+	line-height: 40px;
+	}
+/* Format banner under header */
+.banner {
+	margin-top: 0;
+	font-size: .75rem;
+	margin-left: 2rem;
+	}
+/* Format hero title */
+.home h1.hero-title {
+	font-size: 2rem;
+	margin-left: 1rem;
+	}
+.home p.hero-title {
+	font-size: 1rem;
+	margin-left: 1rem;
+	}
+/* Delete mobile header on star party pages */
+.category-starparty #mobile-header {
+	display: none !important;
+	}
+}
