@@ -1,0 +1,361 @@
+/*
+ Theme Name:   CHAOS GP Child
+ Theme URI:    https://generatepress.com
+ Description:  Default Generate Press child
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+/* Assign color variables */
+:root {
+	--blue: #3c408b;
+	--rust: #8b3c40
+	--gray: #dedede;
+	--darkgray: #606060;
+	--green: #408b3c;
+}
+/* Get rid of space between navbar and hero image */
+.home #main {
+	margin-top: 0;
+}
+.home .inside-article,
+.home .wp-block-group__inner-container {
+	padding-top: 0;
+}
+/* Hero title alignment */
+.home h1.hero-title {
+	margin-left: 150px;
+	font-size: 3rem;
+	font-weight: 700;
+	color: white;
+	text-shadow: 2px 2px 0 black;
+	/* box-shadow: -5px -3px 5px var(--light-gray,gray); */
+	/* background-color: var(--light-gray,gray); */
+	display: inline-block;
+	margin-top: 200px;
+	margin-bottom: 0;
+}
+p.hero-title {
+	margin-left: 150px;
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: white;
+	text-shadow: 1px 1px 0 black;
+	display: table-cell;
+}
+/* Line up hero title, button */
+.home .wp-block-cover__inner-container {
+	display: flex;
+	flex-direction: column;
+	align-items:
+}
+.home .wp-block-cover__inner-container p {
+	margin-bottom: 0;
+}
+/* Format header widgets */
+.banner,
+.club-title {
+	background: black;
+	color: white;
+	font-weight: 800;
+	margin-left: 0;
+}
+.club-title p,
+.banner p {
+	margin-bottom: 0;
+}
+.banner p {
+	padding-bottom: .2rem;
+}
+.faq ul {
+	list-style: none;
+}
+/* Format media text on star party page */
+.register-media-text .wp-block-media-text__content {
+	padding: 0 4%;
+}
+.register-media-text h4 {
+	color: white;
+	background: var(--darkgray,darkgray);
+	padding-left: .5rem;
+}
+h4.register-title {
+	background: var(--blue,dodgerblue) !important;
+}
+/* Get rid of the gap */
+.register-media-text .ugb-columns__item {
+	grid-gap: 2px !important;
+}
+.register-media-text .wp-block-media-text {
+	margin-left: 0;
+}
+/* Footer */
+.footer-widgets {
+	background: #3a3a3a;
+}
+.footer-widgets p {
+	font-size: 16px;
+	margin-bottom: 0;
+	color: white;
+}
+/* Footer widget spacing */
+.footer-widgets .widget-title {
+	margin-bottom: 10px;
+	color: white;
+}
+/* Footer widget spacing */
+.footer-widgets .footer-address,
+.footer-widgets .footer-officers {
+	margin-bottom: .2rem;
+}
+.footer-widgets .footer-address .button {
+	padding: 2rem;
+}
+/* Text sizes */
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: var(--blue,Blue);
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--blue,Blue);
+}
+h3 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: var(--blue,Blue);
+}
+h4 {
+	margin-bottom: 0;
+}
+/* Reformat for mobile, from virada-japan.com/create-responsive-tables-wordpress */
+table,
+th,
+td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  width: 100%;
+}
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+/* Star party page styling ----------------------------------------------------------------*/
+.category-starparty {
+	background-color: black;
+	color: white; 
+	padding-left: 20px; }
+
+div.category-starparty {
+    background-color: black;
+    margin-top: 0px; 
+	margin-bottom: 0px; 
+	padding-bottom: 10px;}
+
+p.category-starparty {
+    color: white; 
+	background-color: black; 
+	margin-bottom: 0px; 
+	padding-bottom: 0px; 
+	margin-top: 0px; 
+	padding-top: 0px;}
+
+h1.category-starparty {
+    background-color: black; 
+    margin-top: 0px; 
+	padding-top: 10px; 
+	margin-bottom: 0px; 
+	padding-bottom: 10px; 
+	width:100%; 
+	text-decoration: none; }
+
+h2.category-starparty {
+    background-color: black; 
+	margin-bottom: 0px; 
+	padding-bottom: 10px; }
+
+table.category-starparty {
+    background-color: black; }
+
+p.category-starparty {
+    background-color: black; 
+	margin-bottom: 0px; 
+	padding-bottom: 10px; }
+
+h1.category-starparty {
+	padding-top: 20px; }
+
+figure.category-starparty {
+    background-color:black;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+
+.category-starparty .entry-content {
+    background-color:black;
+    margin: 0px
+    padding-bottom: 0px; }
+
+a:link.category-starparty {
+    color: white; }
+
+a:hover.category-starparty {
+    color: red; }
+
+.category-starparty .grid-container,
+.category-starparty .inside-navigation {
+    max-width: 100%}
+
+.category-starparty .inside-article {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: black;
+}
+ .faq .category-starparty ul {
+    list-style: disc;
+}
+.starparty-registration .wp-block-pullquote {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.photos .inside-article {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.photos h1.alignfull {
+    margin-left: 0 !important;
+}
+.wpec-modal-container {
+    background: black !important;
+}
+.wpec-custom-number-input button {
+	background-color: gray !important;
+}
+/* Paypal page title 
+.wpec-modal-content-title {
+	color: black;
+}
+/* Paypal quantity
+.wpec-custom-number-input-wrapper {
+    color: black;
+}
+label.wpec-product-variations-select-radio-label {
+    color: black;
+}
+.starparty-registration .entry-content {
+	color: black;
+}
+*/
+/* Table styling for mobile -----------------------------------------------------------*/
+@media (max-width: 768px) {
+/*
+#masthead {
+	display: block !important;
+	opacity: 1;
+}
+
+.nav-float-right .inside-header .site-branding {
+	display: none;
+}
+
+.inside-header {
+	padding: 10px;
+}
+*/
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  table tbody td {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 0.6rem;
+  }
+  table tbody td::before {
+    content: attr(data-th);
+    font-weight: 300;
+    font-size: small;
+	border-width: 0;
+    display: inline-block;
+    width: 6rem;
+  }
+  table, th, td {
+	  border: 0;
+  }
+}
+/* Tablet CSS --------------------------------------------------------------------------------------------- */
+@media (min-width: 1025px) {
+/* Shift navbar to right on desktop */
+#site-navigation .navigation-branding {
+	margin-right: 100px;
+	}
+}
+/* Mobile CSS ---------------------------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+/* Decrease item spacing in mobile hamburger drop down */
+.main-navigation .main-nav ul li a {
+	line-height: 40px;
+	}
+/* Format banner under header */
+.banner,
+.club-title {
+	margin-top: 0;
+	font-size: .75rem;
+	padding-left: 0;
+	margin-left: .8rem;
+	}
+.banner p,
+.club-title p {
+	margin-bottom: 0;
+	}
+/* Format hero title */
+.home h1.hero-title {
+	font-size: 2rem;
+	margin-left: 1rem;
+	}
+.home p.hero-title {
+	font-size: 1rem;
+	margin-left: 1rem;
+	}
+/* Delete mobile header on star party pages */
+.category-starparty #mobile-header {
+	display: none !important;
+	}
+	/* Table format */
+	table thead {
+    display: none;
+  }
+  table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  table tbody td {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 0.6rem;
+  }
+  table tbody td::before {
+    content: attr(data-th);
+    font-weight: 300;
+    font-size: small;
+	border-width: 0;
+    display: inline-block;
+    width: 6rem;
+  }
+  table, th, td {
+	  border: 0;
+  }
+}
